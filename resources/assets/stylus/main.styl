@@ -1,0 +1,458 @@
+azul0 = #25ADE1
+azul1 = #0084CC
+azul2 = #003A60
+gris1 = #F1F1F3
+
+body
+	background gris1
+	color #2661AD
+	font-family 'Roboto Slab', serif
+	padding-top 50px
+	.navbar-brand
+		background transparent url(../../images/sprite-logo.jpg) no-repeat left -227px
+		span
+			visibility hidden
+	.navbar-default
+		background-color gris1
+		.navbar-toggle
+			border-color transparent
+			.icon-bar
+				background-color azul1
+			&:hover
+				background-color azul2
+	.block-1
+		display block
+		height auto
+		margin 0
+		overflow hidden
+		padding 0
+		img
+			display block
+			height auto
+			margin-left -80%
+			width 260%
+		&.extract
+			img
+				margin-left 0
+	.img-up
+		margin-top -200px
+		position relative
+		z-index 1
+		&.extract
+			margin-top -60px
+	.welcome
+		color white
+		font-size 1.5em
+		font-weight 300
+		margin-bottom 70px
+		margin-top -140px
+		position relative
+		span
+			background azul0
+			padding 10px 10px 10px 20px
+			&:after
+				border-bottom 50px solid transparent
+				border-left 40px solid azul0
+				border-top 0px solid transparent
+				content ''
+				height 0
+				left 265px
+				position absolute
+				top -9px
+				width 0
+	.row
+		.container
+			h2
+				font-size 1.7em
+				font-weight 300
+	.features
+		background-color azul2
+		color white
+		position relative
+		z-index 2
+		padding 10px 0
+		.feature
+			min-height 180px
+			padding-top 10px
+			text-align center
+			.icon
+				font-size 10em
+				height 110px
+				line-height 1em
+				vertical-align middle
+			.text
+				padding 10px 60px 0 60px
+		hr
+			border-color white
+			margin 20px auto 0 auto
+			width 40%
+		.sep
+			width 0
+			border-left 1px solid white
+			display inline-block
+			height 120px
+			display none
+	.porque
+		background-color gris1
+		padding 30px 0
+		position relative
+		z-index 2
+	.row.form
+		background-color azul1
+		color white
+		padding 30px 0
+	.form-group
+		span
+			display inline-block
+			vertical-align middle
+		textarea
+			resize none
+	.form-control
+		border-radius 2px
+	.submit-btn
+		background-color #25ADE1
+		border none
+		display block
+		font-size 1.4em
+		margin-bottom 20px
+		padding 5px 10px 5px 20px
+		position relative
+	.section-title
+		background-color azul0
+		margin-bottom 20px
+		padding 5px 0
+		&.contacto
+			margin-bottom 0
+		h2
+			color white
+			font-size 2em
+			font-weight 300
+	/*socios*/
+	.socio-item
+		margin 30px 0
+		border-bottom 1px solid azul1
+		&:first-of-type
+			margin-top 30px
+	/*empresas reguladoras*/
+	.companies
+		text-align center
+		.company
+			border-bottom 1px solid azul1
+			padding 20px 0
+			&:last-of-type
+				border none
+	/*Manejo de riesgos*/
+	.risks
+		padding-bottom 30px
+		.risk
+			height 200px
+			overflow hidden
+			h2
+				font-weight 700
+	.cilindro
+	.calentadores
+	.estacionario
+	.fugas
+	.olor
+		border-bottom 1px solid azul1
+		display block
+		margin-top 10px
+		padding-bottom 15px
+		text-align right
+		span
+			background-color azul1
+			color white
+			font-size 1.6em
+			font-weight 700
+			padding 0 8px
+	
+	footer
+		background-color azul2
+		color white
+		font-weight 300
+		height auto
+		padding 30px 0
+		hr
+			border-color #0086CA
+		.sep
+			width 0
+			border-left 1px solid azul0
+			height 30px
+			display inline-block
+			margin 0 20px
+			display none
+
+@media screen and (min-width:480px)
+	body
+		.block-1
+			img
+				margin-left -50%
+				width 200%
+		.welcome
+			font-size 1.6em
+			span
+				background azul0
+				padding 10px 10px 10px 20px
+				&:after
+					left 280px
+@media screen and (min-width:768px)
+	body
+		padding-top 0
+		.navbar
+			margin-bottom 0
+		.navbar-fixed-top
+			position relative
+			padding 20px 0
+		.navbar-default .navbar-nav > li > a
+			color azul2
+		.navbar-nav
+			float right
+			font-size .8em
+			font-weight bold
+			width 610px
+			text-transform uppercase
+			vertical-align middle
+			li
+				border-right 1px solid azul2
+				height 30px
+				&:last-of-type
+					border none
+				a
+					padding 5px
+					text-align center
+			.quienes
+				width 105px
+			.socios
+				width 60px
+			.reguladoras
+				width 100px
+			.precios
+				width 70px
+			.normatividad
+				width 110px
+			.riesgos
+				width 90px
+			.contacto
+				width 70px
+		.block-1
+			height 500px
+			overflow hidden
+			img
+				margin-left -50%
+				width 200%
+		.welcome
+			font-size 1.8em
+			span
+				background azul0
+				padding 10px 30px 10px 180px
+				&:after
+					border-bottom 52px solid transparent
+					left 492px
+		.features
+			border-bottom 5px solid azul0
+			margin 0 auto
+			overflow hidden
+			padding-bottom 20px
+			padding-top 20px
+			width 700px
+			.feature
+				display inline-block
+				min-height 180px
+				padding-top 10px
+				text-align center
+				width 230px
+				.icon
+					font-size 10em
+					height 110px
+					line-height 1em
+					vertical-align middle
+				.text
+					font-size .9em
+					padding 10px 20px 0 20px
+			.sep
+				display inline-block
+			hr
+				display none
+		.img-up
+			margin-top 0
+			&.extract
+				margin-top 0
+		.porque
+		.block-text
+			background-color transparent
+			margin-top -370px
+			position relative
+			z-index 2
+			.container
+				p
+					font-size 1.4em
+					padding 50px 200px 50px 0
+		.asesoria
+			.container
+				h2
+					text-align right
+				p
+					font-size 1.4em
+					padding 50px 0px 50px 200px
+					text-align right
+		.row.form
+			color white
+			display block
+			margin-top 50px
+			padding 30px 0
+			.container
+				h2
+					text-align center
+				form
+					margin 0 auto
+					width 310px
+				p.text-center
+					margin 0 auto
+					width 320px
+		.form-group
+			span
+				display inline-block
+				vertical-align middle
+		footer
+			padding 20px 0
+			hr
+				display none
+			p.text-center
+				display inline-block
+				text-align left
+			.sep
+				display inline-block
+		/*socios*/
+		.socio-item
+			border none
+		/*empresas reguladoras*/
+		.companies
+			.company
+				border none
+				display inline-block
+				width 49%
+		/*Contacto*/
+		.row.form.contacto
+			margin-top 0
+@media screen and (min-width:992px)
+	body
+		.navbar-fixed-top
+			padding 30px 0 20px 0
+			position relative
+		.navbar-brand
+			background transparent url(../../images/sprite-logo.jpg) no-repeat left -123px
+			height 70px
+			margin-top -20px
+			width 220px
+		.porque
+		.block-text
+			.container
+				h2
+					padding-left 10%
+				p
+					font-size 1.4em
+					padding 50px 40% 50px 10%
+		.asesoria
+			.container
+				h2
+					padding 50px 10% 0px 40%
+				p
+					font-size 1.4em
+					padding 50px 10% 50px 40%
+					text-align right
+		.block-1
+			display block
+			height auto
+			margin 0
+			overflow hidden
+			padding 0
+			img
+				display block
+				height auto
+				margin-left 0
+				width 100%
+			&.extract
+				img
+					margin-left 0
+		.welcome
+			font-size 2.2em
+			margin-bottom 150px
+			margin-top -260px
+			span
+				padding 10px 40px 10px 180px
+				&:after
+					border-bottom 60px solid transparent
+					left 563px
+					top -8px
+		.companies
+			padding 70px 0
+			.company
+				margin-left 50px
+				width 18%
+				a
+					img
+						margin 0 auto
+						width 100%
+@media screen and (min-width:1100px)
+	body
+		.navbar-nav
+			font-size 1em
+			width 840px
+			li
+				border-right 1px solid azul2
+				height 30px
+				&:last-of-type
+					border none
+				a
+					padding 5px
+					text-align center
+			.quienes
+				width 140px
+			.socios
+				width 80px
+			.precios
+				width 100px
+			.reguladoras
+			.normatividad
+				width 140px
+			.riesgos
+			.contacto
+				width 120px
+@media screen and (min-width:1280px)
+	body
+		.block-1
+			max-height 700px
+		.porque
+		.block-text
+			margin-top -500px
+			margin-bottom 150px
+			.container
+				h2
+					padding-left 10%
+				p
+					font-size 1.4em
+					padding 50px 40% 50px 10%
+		.asesoria
+			.container
+				h2
+					padding 50px 10% 0px 40%
+				p
+					font-size 1.4em
+					padding 50px 10% 50px 40%
+					text-align right
+		.row.form
+			margin-top 220px
+@media screen and (min-width:1400px)
+	body
+		.welcome
+			span
+				padding 10px 40px 10px 280px
+				&:after
+					left 663px
+@media screen and (min-width:1600px)
+	body
+		.welcome
+			span
+				padding 10px 40px 10px 430px
+				&:after
+					left 813px
